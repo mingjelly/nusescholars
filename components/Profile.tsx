@@ -1,14 +1,13 @@
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import {
   Box,
-  Typography,
-  Avatar,
   List,
   ListItem,
   ListItemText,
   Link as MuiLink,
+  Typography,
 } from "@mui/material";
 import Image from "next/image";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 interface ProfileProps {
   name: string;
