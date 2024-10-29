@@ -1,33 +1,45 @@
+// components/FullPageImage.tsx
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import React from "react";
 
-const FullPageImage: React.FC = () => {
+interface FullPageImageProps {
+  imageUrl: string;
+  text?: string; // Optional prop for overlay text
+}
+
+const FullPageImage: React.FC<FullPageImageProps> = ({ imageUrl, text }) => {
   return (
     <Box
       sx={{
+        position: "relative",
         width: "100vw",
         height: "100vh",
-        backgroundImage: "url(/path/to/your/image.jpg)", // replace with your image path
+        backgroundImage: `url(${imageUrl})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        overflow: "hidden",
       }}
     >
-      <Typography
-        variant="h2" // Choose an appropriate variant or customize the style
-        sx={{
-          color: "white",
-          backgroundColor: "rgba(0, 0, 0, 0.5)", // semi-transparent background for readability
-          padding: "16px",
-          borderRadius: "8px",
-        }}
-      >
-        Welcome to the D-E Scholars Webpage!
-      </Typography>
+      {text && (
+        <Typography
+          variant="h2"
+          sx={{
+            position: "absolute",
+            color: "white",
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            padding: "16px",
+            borderRadius: "8px",
+            textAlign: "center",
+          }}
+        >
+          {text}
+        </Typography>
+      )}
     </Box>
   );
 };
