@@ -9,7 +9,7 @@
     "lint": "next lint",
     "format": "prettier --write .",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d pages/out"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
