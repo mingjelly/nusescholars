@@ -20,7 +20,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
-          node-version: "18" # Use the version compatible with your project
+          node-version: "20" # Use the version compatible with your project
           cache: "npm"
 
       - name: Install dependencies
