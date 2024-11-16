@@ -1,10 +1,11 @@
 import FullPageImage from "../../components/FullPageImage";
+import LandingImage from "../../components/LandingPage/LandingImage";
 
 export default function Page() {
   return (
-    <FullPageImage
-      imageUrl="/images/orientation2024.jpg"
-      text="Welcome to the D-E scholars webpage!"
+    <LandingImage
+      imageUrl="/nusescholars/images/orientation2024.jpg"
+      title="Welcome to the D-E scholars webpage!"
     />
   );
 }
