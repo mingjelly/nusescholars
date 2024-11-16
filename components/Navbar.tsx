@@ -17,15 +17,35 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <AppBar position="sticky" color="default" sx={{ backgroundColor: "#CDCDCD" }}>
+    <AppBar
+      position="sticky"
+      color="default"
+      sx={{ backgroundColor: "#CDCDCD" }}
+    >
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-        <Typography variant="h6" sx={{ fontWeight: 'bold' }}>NUS DE-SCHOLARS</Typography>
-        <Box sx={{ display: "flex", alignItems: "center", gap: "16px" }}>
+        <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+          NUS DE-SCHOLARS
+        </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            flexWrap: "wrap",
+            gap: "16px",
+          }}
+        >
           <Button color="inherit">About Us</Button>
           <Button color="inherit">Humans of De-Scholars</Button>
           <Button color="inherit">Events</Button>
           <Button color="inherit">Resources</Button>
-          <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              flexWrap: "wrap",
+              gap: "8px",
+            }}
+          >
             {showSearch && (
               <TextField
                 size="small"
