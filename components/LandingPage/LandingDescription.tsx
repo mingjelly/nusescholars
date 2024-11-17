@@ -15,7 +15,10 @@ const LandingDescription: React.FC<LandingDescriptionProps> = ({ text }) => {
         textAlign: "center",
       }}
     >
-      <Typography variant="body1" sx={{ fontSize: "1.2rem", lineHeight: "1.8" }}>
+      <Typography
+        variant="body1"
+        sx={{ fontSize: "1.2rem", lineHeight: "1.8" }}
+      >
         {text}
       </Typography>
     </Box>
