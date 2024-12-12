@@ -1,5 +1,5 @@
-import Profile from "../../../../components/Profile";
-import PageTemplate from "../../../../components/PageTemplate";
+import Profile from "../../../../../components/Profile";
+import PageTemplate from "../../../../../components/PageTemplate";
 
 export default function ProfilePage() {
   return (
