@@ -11,7 +11,7 @@ export default function ProfilePage() {
         introduction="Hi there! Matthew here, Y3 ME."
         interests="My interest particularly lies in F1 and 3D printing."
         hobbies={["F1", "3D printing", "Web dev"]}
-        imageUrl="/images/Matthew-Yip.jpg"
+        imageUrl="/images/ay22-23/matthew-yip.jpg"
         linkedInUrl="https://nusmods.com"
       />
     </PageTemplate>
