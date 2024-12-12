@@ -28,11 +28,18 @@ Recommended installation mode: prebuilt installer
 
 # Add the packages to your system
 
-Open the file and run the following commands **one by one**
+Using any terminal, ensure that you are in the project directory. You may use `cd` to change to the right directory.
+Open the file and run the following commands **one by one**:
 
+Mac / Linux:
 ```
 chmod a+x ./requirements.sh
 ./requirements.sh
+```
+
+Windows:
+```
+git bash ./requirements.sh
 ```
 
 This will set up the necessary packages that you need.
