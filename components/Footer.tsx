@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
         justifyContent: "space-between",
       }}
     >
-      {/* Column 1: Navigation Links */}
+      {/* Column 1: Navigation LinkItems */}
       <Box sx={{ flex: "1 1 300px", marginBottom: "16px" }}>
         <Typography
           variant="h6"

@@ -1,51 +1,34 @@
 import React from "react";
-import Header from "../../../../components/HumansPage/Header";
-import Department from "../../../../components/HumansPage/Department";
 import PageTemplate from "../../../../components/PageTemplate";
-import { Container } from "@mui/material";
+import PersonCards from "../../../../components/HumansPage/PersonCard";
+import Header from "../../../../components/HumansPage/Header";
 
 const App: React.FC = () => {
-  const handleMemberClick = (name: string) => {
-    alert(`You clicked on ${name}`);
-  };
-
-  const biomedicalMembers = [
-    {
-      name: "John Doe",
-      image: "/path-to-image.jpg",
-      onClick: () => handleMemberClick("John Doe"),
-    },
-    {
-      name: "Jane Smith",
-      image: "/path-to-image.jpg",
-      onClick: () => handleMemberClick("Jane Smith"),
-    },
+  const baseLink = "/humans-of-descholars/ay22-23/";
+  const mechanicalEngineeringStudents= [
+    { image: "/images/ay22-23/matthew-yip.jpg", link: baseLink + "matthew-yip", name: "Matthew Yip" },
+    { image: "/images/ay22-23/matthew-yip.jpg", link: baseLink + "matthew-yip", name: "Matthew Yip" },
+    { image: "/images/ay22-23/matthew-yip.jpg", link: baseLink + "matthew-yip", name: "Matthew Yip" },
+    { image: "/images/ay22-23/matthew-yip.jpg", link: baseLink + "matthew-yip", name: "Matthew Yip" },
+    { image: "/images/ay22-23/matthew-yip.jpg", link: baseLink + "matthew-yip", name: "Matthew Yip" },
+    { image: "/images/ay22-23/matthew-yip.jpg", link: baseLink + "matthew-yip", name: "Matthew Yip" },
   ];
 
-  const chemicalMembers = [
-    {
-      name: "Alice Johnson",
-      image: "/path-to-image.jpg",
-      onClick: () => handleMemberClick("Alice Johnson"),
-    },
-    {
-      name: "Bob Brown",
-      image: "/path-to-image.jpg",
-      onClick: () => handleMemberClick("Bob Brown"),
-    },
+  const electricalEngineeringStudents= [
+    { image: "/images/ay22-23/matthew-yip.jpg", link: baseLink + "matthew-yip", name: "Matthew Yip" },
+    { image: "/images/ay22-23/matthew-yip.jpg", link: baseLink + "matthew-yip", name: "Matthew Yip" },
+    { image: "/images/ay22-23/matthew-yip.jpg", link: baseLink + "matthew-yip", name: "Matthew Yip" },
+    { image: "/images/ay22-23/matthew-yip.jpg", link: baseLink + "matthew-yip", name: "Matthew Yip" },
+    { image: "/images/ay22-23/matthew-yip.jpg", link: baseLink + "matthew-yip", name: "Matthew Yip" },
+    { image: "/images/ay22-23/matthew-yip.jpg", link: baseLink + "matthew-yip", name: "Matthew Yip" },
   ];
 
   return (
-    <PageTemplate>
-      <Container maxWidth="lg" sx={{ marginTop: "20px" }}>
+      <PageTemplate>
         <Header image="/images/orientation2024.jpg" title="AY23/24" />
-        <Department
-          title="Biomedical Engineering"
-          members={biomedicalMembers}
-        />
-        <Department title="Chemical Engineering" members={chemicalMembers} />
-      </Container>
-    </PageTemplate>
+        <PersonCards personCards={mechanicalEngineeringStudents} title={"Mechanical Engineering"}/>
+        <PersonCards personCards={electricalEngineeringStudents} title={"Electrical Engineering"}/>
+      </PageTemplate>
   );
 };
 
