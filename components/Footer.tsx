@@ -3,8 +3,16 @@ import React from "react";
 import { Box, Typography, TextField, Button, IconButton } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import Link from "next/link";
 
 const Footer: React.FC = () => {
+  const navLinks = [
+    { label: "About Us", href: "/about-us" },
+    { label: "Humans of De-Scholars", href: "/humans-of-descholars" },
+    { label: "Events", href: "/events" },
+    { label: "Resources", href: "/resources" },
+  ];
+
   return (
     <Box
       sx={{
@@ -16,29 +24,41 @@ const Footer: React.FC = () => {
         justifyContent: "space-between",
       }}
     >
-      {/* Column 1: Navigation LinkItems */}
+      {/* Column 1: Logo and Navigation Links */}
       <Box sx={{ flex: "1 1 300px", marginBottom: "16px" }}>
-        <Typography
-          variant="h6"
-          sx={{ fontWeight: "bold", marginBottom: "16px" }}
-        >
-          NUS DE-SCHOLARS
-        </Typography>
-        <Typography sx={{ marginBottom: "8px", cursor: "pointer" }}>
-          About Us
-        </Typography>
-        <Typography sx={{ marginBottom: "8px", cursor: "pointer" }}>
-          Humans of De-Scholars
-        </Typography>
-        <Typography sx={{ marginBottom: "8px", cursor: "pointer" }}>
-          Events
-        </Typography>
-        <Typography sx={{ marginBottom: "8px", cursor: "pointer" }}>
-          Resources
-        </Typography>
+        <Link href="/" passHref>
+          <Typography
+            variant="h6"
+            sx={{
+              fontWeight: "bold",
+              marginBottom: "16px",
+              cursor: "pointer",
+              textDecoration: "none", // Remove underline
+              color: "inherit", // Inherit text color
+              "&:hover": { color: "gray" }, // Add hover effect
+            }}
+          >
+            NUS DE-SCHOLARS
+          </Typography>
+        </Link>
+        {navLinks.map((link) => (
+          <Box key={link.label} sx={{ marginBottom: "8px" }}>
+            <Link href={link.href} passHref>
+              <Typography
+                sx={{
+                  cursor: "pointer",
+                  textDecoration: "none",
+                  "&:hover": { color: "gray" },
+                }}
+              >
+                {link.label}
+              </Typography>
+            </Link>
+          </Box>
+        ))}
       </Box>
 
-      {/* Column 2: Social Media */}
+      {/* Column 2: Social Media Links */}
       <Box sx={{ flex: "1 1 300px", marginBottom: "16px" }}>
         <Typography
           variant="h6"
