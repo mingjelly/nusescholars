@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
@@ -23,9 +24,19 @@ const Navbar: React.FC = () => {
       sx={{ backgroundColor: "#CDCDCD" }}
     >
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-        <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-          NUS DE-SCHOLARS
-        </Typography>
+        <Link href="/" passHref>
+          <Typography
+            variant="h6"
+            sx={{
+              fontWeight: "bold",
+              cursor: "pointer", // Add pointer cursor for better UX
+              textDecoration: "none", // Prevent underlining
+              color: "inherit", // Inherit the color from the theme
+            }}
+          >
+            NUS DE-SCHOLARS
+          </Typography>
+        </Link>
         <Box
           sx={{
             display: "flex",
@@ -34,10 +45,19 @@ const Navbar: React.FC = () => {
             gap: "16px",
           }}
         >
-          <Button color="inherit">About Us</Button>
-          <Button color="inherit">Humans of De-Scholars</Button>
-          <Button color="inherit">Events</Button>
-          <Button color="inherit">Resources</Button>
+          {/* Use Link component for navigation */}
+          <Link href="/about-us" passHref>
+            <Button color="inherit">About Us</Button>
+          </Link>
+          <Link href="/humans-of-descholars" passHref>
+            <Button color="inherit">Humans of De-Scholars</Button>
+          </Link>
+          <Link href="/events" passHref>
+            <Button color="inherit">Events</Button>
+          </Link>
+          <Link href="/resources" passHref>
+            <Button color="inherit">Resources</Button>
+          </Link>
           <Box
             sx={{
               display: "flex",
