@@ -32,6 +32,14 @@ const AboutUs: React.FC = () => {
         description="The overseas experience is one of the key features of the E-Scholars programme. E-Scholars enjoy priority consideration for the Student Exchange Programme (SEP) and NUS Overseas College (NOC) programme, which are generously subsidised under the scholarship. Furthermore, E-Scholars enjoy subsidised Summer and Winter Exchange programmes – a perk on par with the NUS Global Merit Scholarship!"
         image="/images/about-us/travels.png"
       />
+
+      {/* Community Section */}
+      <Section
+        title="DE-Scholars Community"
+        description="Most importantly, E-Scholars enjoy the perk of staying at one of the University Town residences. In particular, they will have the choice between Residential College 4 and other colleges. Additionally, the E-Scholar Committee plans regular events to cater to the welfare of the fellow scholars such as bonding events during recess and reading week, exam welfare, monthly townhall gathering with food and good vibes!"
+        image="/images/about-us/formals.png"
+        reverse
+      />
     </PageTemplate>
   );
 };

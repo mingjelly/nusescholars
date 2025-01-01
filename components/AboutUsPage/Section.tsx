@@ -57,6 +57,7 @@ const styles = {
     flex: 1,
     minWidth: "50%", // Occupies 50% when in row layout
     boxSizing: "border-box",
+    padding: "10px 20px",
   } as React.CSSProperties,
   title: {
     fontSize: "24px",
@@ -66,10 +67,12 @@ const styles = {
   description: {
     fontSize: "16px",
     lineHeight: "1.6",
+    textAlign: "justify",
   } as React.CSSProperties,
   imageContainer: {
     flex: 1,
     minWidth: "50%", // Occupies 50% when in row layout
+    height: "100%",
     boxSizing: "border-box",
     display: "flex",
     justifyContent: "center",
