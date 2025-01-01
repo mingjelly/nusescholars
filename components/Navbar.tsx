@@ -106,7 +106,11 @@ const Navbar: React.FC = () => {
         <List>
           {navLinks.map((link) => (
             <ListItem key={link.label} disablePadding>
-              <ListItemButton onClick={toggleMobileMenu} component="a" href={link.href}>
+              <ListItemButton
+                onClick={toggleMobileMenu}
+                component="a"
+                href={link.href}
+              >
                 <ListItemText primary={link.label} />
               </ListItemButton>
             </ListItem>
