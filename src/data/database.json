@@ -100,61 +100,60 @@
         "github_url": null
       }
     },
-    "CEG":
-      {
-        "karishma-thirumaran": {
-          "name": "Karishma Thirumaran",
-          "admit_year": "AY22/23 (Year 3)",
-          "academic_career": "E-Scholars Undergraduate",
-          "major": "Computer Engineering",
-          "writeup": "Hi, I\u2019m Karishma! I\u2019m a Y3 undergraduate majoring in Computer Engineering. \n\nCurrently, I am interested in innovation in software engineering, and exploring the diverse opportunities in the sector such as automation, app development and AI. I am also passionate about business and entrepreneurship, and was part of the Jan'24 NOC Munich batch. \n\nOther than watching bad hallmark christmas movies, my personal interests include playing the drums and english literature. Feel free to connect with me to discuss about anything from cs to seasonal movies! ",
-          "picture_url": "https://nusu-my.sharepoint.com/personal/e1122235_u_nus_edu/Documents/Apps/Microsoft%20Forms/DE-Scholars%20Census%20AY2425/Question/photo_2024-03-02%2022.59.27_Karishma%20Thirumaran.jpeg",
-          "notable_achievements": null,
-          "interests_hobbies": null,
-          "linkedin_url": "https://www.linkedin.com/in/karishma-t-94b807198/",
-          "instagram_url": "https://www.instagram.com/karishma.at/",
-          "github_url": null
-        },
-        "meng-han-yeo": {
-          "name": "Meng Han Yeo",
-          "admit_year": "AY22/23 (Year 3)",
-          "academic_career": "E-Scholars Undergraduate",
-          "major": "Computer Engineering",
-          "writeup": "Hi! I'm an undergraduate at the National University of Singapore (NUS) studying computer engineering under the Engineering Scholars (E-Scholars) Programme. I'm very passionate about entrepreneurship and developments in the field of technology and innovation - specifically the forefront of Robotics, Computer Vision and AI. At the moment, I'm deeply interested in manifesting the power of LLM via AI Agents and Retrieval-Augmented-Generation (RAG).",
-          "picture_url": "https://nusu-my.sharepoint.com/personal/e1122235_u_nus_edu/Documents/Apps/Microsoft%20Forms/DE-Scholars%20Census%20AY2425/Question/F37CD1AE-0730-46E3-9682-C4112BA9FC20_Meng%20Han%20Yeo.jpeg",
-          "notable_achievements": "- NUS Computing Lifehack Project Director 2023\n- AI Singapore National AI Challenge Track 3 Top 3 Winner\n- NOC Alumni (NOC Vietnam AY23/24 Semester 2)",
-          "interests_hobbies": "- Watching documentaries\n- Strategy Computer Games\n- Manga / Korean manhwa!",
-          "linkedin_url": "https://sg.linkedin.com/in/yeo-meng-han",
-          "instagram_url": "https://www.instagram.com/yeo_menghan/?hl=en",
-          "github_url": "https://github.com/yeo-menghan"
-        },
-        "ryan-tan": {
-          "name": "Ryan Tan",
-          "admit_year": "AY22/23 (Year 3)",
-          "academic_career": "E-Scholars Undergraduate",
-          "major": "Computer Engineering",
-          "writeup": "Hi, I'm Ryan, majoring in Computer Engineering. I am interested in software development and exploring AI/ML tools. Aside from academics, I also like playing table tennis and long distance running.",
-          "picture_url": "https://nusu-my.sharepoint.com/personal/e1122235_u_nus_edu/Documents/Apps/Microsoft%20Forms/DE-Scholars%20Census%20AY2425/Question/IMG_20240806_144257_329_Ryan%20Tan.jpg",
-          "notable_achievements": null,
-          "interests_hobbies": "Long distance running\nTable Tennis\nDance",
-          "linkedin_url": "https://www.linkedin.com/in/ryan-tan-447995268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-          "instagram_url": null,
-          "github_url": "https://github.com/Thunderdragon221?tab=achievements"
-        },
-        "yu-xuan-shan": {
-          "name": "Yu Xuan Shan",
-          "admit_year": "AY22/23 (Year 3)",
-          "academic_career": "E-Scholars Undergraduate",
-          "major": "Computer Engineering",
-          "writeup": "Hi! I am Yu Xuan, I had a lot of fun during my NUS journey, going to winter school, exchange, overseas trips and more. I will be going to Silicon Valley for internship soon.",
-          "picture_url": "https://nusu-my.sharepoint.com/personal/e1122235_u_nus_edu/Documents/Apps/Microsoft%20Forms/DE-Scholars%20Census%20AY2425/Question/1J6A8775_Yu%20Xuan%20Shan.jpg",
-          "notable_achievements": null,
-          "interests_hobbies": "Hiking\nRead Chinese novel\nSinging",
-          "linkedin_url": null,
-          "instagram_url": null,
-          "github_url": null
-        }
+    "CEG": {
+      "karishma-thirumaran": {
+        "name": "Karishma Thirumaran",
+        "admit_year": "AY22/23 (Year 3)",
+        "academic_career": "E-Scholars Undergraduate",
+        "major": "Computer Engineering",
+        "writeup": "Hi, I\u2019m Karishma! I\u2019m a Y3 undergraduate majoring in Computer Engineering. \n\nCurrently, I am interested in innovation in software engineering, and exploring the diverse opportunities in the sector such as automation, app development and AI. I am also passionate about business and entrepreneurship, and was part of the Jan'24 NOC Munich batch. \n\nOther than watching bad hallmark christmas movies, my personal interests include playing the drums and english literature. Feel free to connect with me to discuss about anything from cs to seasonal movies! ",
+        "picture_url": "https://nusu-my.sharepoint.com/personal/e1122235_u_nus_edu/Documents/Apps/Microsoft%20Forms/DE-Scholars%20Census%20AY2425/Question/photo_2024-03-02%2022.59.27_Karishma%20Thirumaran.jpeg",
+        "notable_achievements": null,
+        "interests_hobbies": null,
+        "linkedin_url": "https://www.linkedin.com/in/karishma-t-94b807198/",
+        "instagram_url": "https://www.instagram.com/karishma.at/",
+        "github_url": null
       },
+      "meng-han-yeo": {
+        "name": "Meng Han Yeo",
+        "admit_year": "AY22/23 (Year 3)",
+        "academic_career": "E-Scholars Undergraduate",
+        "major": "Computer Engineering",
+        "writeup": "Hi! I'm an undergraduate at the National University of Singapore (NUS) studying computer engineering under the Engineering Scholars (E-Scholars) Programme. I'm very passionate about entrepreneurship and developments in the field of technology and innovation - specifically the forefront of Robotics, Computer Vision and AI. At the moment, I'm deeply interested in manifesting the power of LLM via AI Agents and Retrieval-Augmented-Generation (RAG).",
+        "picture_url": "https://nusu-my.sharepoint.com/personal/e1122235_u_nus_edu/Documents/Apps/Microsoft%20Forms/DE-Scholars%20Census%20AY2425/Question/F37CD1AE-0730-46E3-9682-C4112BA9FC20_Meng%20Han%20Yeo.jpeg",
+        "notable_achievements": "- NUS Computing Lifehack Project Director 2023\n- AI Singapore National AI Challenge Track 3 Top 3 Winner\n- NOC Alumni (NOC Vietnam AY23/24 Semester 2)",
+        "interests_hobbies": "- Watching documentaries\n- Strategy Computer Games\n- Manga / Korean manhwa!",
+        "linkedin_url": "https://sg.linkedin.com/in/yeo-meng-han",
+        "instagram_url": "https://www.instagram.com/yeo_menghan/?hl=en",
+        "github_url": "https://github.com/yeo-menghan"
+      },
+      "ryan-tan": {
+        "name": "Ryan Tan",
+        "admit_year": "AY22/23 (Year 3)",
+        "academic_career": "E-Scholars Undergraduate",
+        "major": "Computer Engineering",
+        "writeup": "Hi, I'm Ryan, majoring in Computer Engineering. I am interested in software development and exploring AI/ML tools. Aside from academics, I also like playing table tennis and long distance running.",
+        "picture_url": "https://nusu-my.sharepoint.com/personal/e1122235_u_nus_edu/Documents/Apps/Microsoft%20Forms/DE-Scholars%20Census%20AY2425/Question/IMG_20240806_144257_329_Ryan%20Tan.jpg",
+        "notable_achievements": null,
+        "interests_hobbies": "Long distance running\nTable Tennis\nDance",
+        "linkedin_url": "https://www.linkedin.com/in/ryan-tan-447995268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "instagram_url": null,
+        "github_url": "https://github.com/Thunderdragon221?tab=achievements"
+      },
+      "yu-xuan-shan": {
+        "name": "Yu Xuan Shan",
+        "admit_year": "AY22/23 (Year 3)",
+        "academic_career": "E-Scholars Undergraduate",
+        "major": "Computer Engineering",
+        "writeup": "Hi! I am Yu Xuan, I had a lot of fun during my NUS journey, going to winter school, exchange, overseas trips and more. I will be going to Silicon Valley for internship soon.",
+        "picture_url": "https://nusu-my.sharepoint.com/personal/e1122235_u_nus_edu/Documents/Apps/Microsoft%20Forms/DE-Scholars%20Census%20AY2425/Question/1J6A8775_Yu%20Xuan%20Shan.jpg",
+        "notable_achievements": null,
+        "interests_hobbies": "Hiking\nRead Chinese novel\nSinging",
+        "linkedin_url": null,
+        "instagram_url": null,
+        "github_url": null
+      }
+    },
     "CHBE": {
       "jiaying-zhuo": {
         "name": "Jiaying Zhuo",
@@ -222,7 +221,7 @@
         "notable_achievements": "Champions of Singapore Undergraduate Policy Conference 2024 \nMerit Award in Engineering Innovation Challenge 2023\n7th to 16th placing in NUS Built Environment Case Competition 2024",
         "interests_hobbies": "Basketball\nListening to music",
         "linkedin_url": "https://www.linkedin.com/in/teojiaxin/",
-        "instagram_url": "(can help remove my IG profile link that's on website currently, thanks!)",
+        "instagram_url": null,
         "github_url": null
       }
     },
@@ -241,61 +240,60 @@
         "github_url": null
       }
     },
-    "MPE":
-      {
-        "yim-hau-yin-ethan": {
-          "name": "Yim Hau Yin, Ethan",
-          "admit_year": "AY22/23 (Year 3)",
-          "academic_career": "E-Scholars Undergraduate",
-          "major": "Mechanical Engineering;",
-          "writeup": "Hi! I'm Ethan and I major in Environmental Engineering, with a specialisation in Aeronautical Engineering. I have a keen interest in the aviation industry and aspire to be a pilot after I graduate. In my free time, I enjoy swimming, listening to music and shooting the breeze with my friends.\nFeel free to chat with me - I love getting to know new people!",
-          "picture_url": "https://nusu-my.sharepoint.com/personal/e1122235_u_nus_edu/Documents/Apps/Microsoft%20Forms/DE-Scholars%20Census%20AY2425/Question/Website%20Profile%20Pic_Hau%20Yin%20Ethan%20Yim.jpg",
-          "notable_achievements": "1. O-Level German\n2. RC4 Swimming IG Captain\n3. Outstanding Student Award ",
-          "interests_hobbies": "1. Swimming\n2. Shooting\n3. Driving",
-          "linkedin_url": "https://www.linkedin.com/in/ethan-yim-448a88246/",
-          "instagram_url": "https://www.instagram.com/ethan_hci/",
-          "github_url": null
-        },
-        "matthew-yip": {
-          "name": "Matthew Yip",
-          "admit_year": "AY22/23 (Year 3)",
-          "academic_career": "E-Scholars Undergraduate",
-          "major": "Mechanical Engineering;",
-          "writeup": "Hello! I am Matthew Yip, a final-year Environmental Engineering student with a Second Major in Computer Science. I have a deep passion for both engineering and tech, and this reflects in my hobbies that include 3D printing and coding with Raspberry Pis! ",
-          "picture_url": "/images/ay22-23/matthew-yip.jpg",
-          "notable_achievements": "NOC Munich AY 23/24\n",
-          "interests_hobbies": "F1\nCycling\n3D printing",
-          "linkedin_url": "https://www.linkedin.com/in/matthew-yip-ba0639154/",
-          "instagram_url": null,
-          "github_url": "https://github.com/matthewyip1511"
-        },
-        "tingkai-xue": {
-          "name": "Tingkai Xue",
-          "admit_year": "AY22/23 (Year 3)",
-          "academic_career": "E-Scholars Undergraduate",
-          "major": "Mechanical Engineering;",
-          "writeup": "Did first internship related to mechanical design and realized it's not my cup of tea. Doing physics-informed machine learning now.",
-          "picture_url": null,
-          "notable_achievements": "Cooked minute rice in 58s",
-          "interests_hobbies": "Performing Arts (Theatre)",
-          "linkedin_url": "https://www.linkedin.com/in/tingkai-xue",
-          "instagram_url": null,
-          "github_url": "https://github.com/xuetingkai"
-        },
-        "isaac-poh-wen-kang": {
-          "name": "Isaac Poh Wen Kang",
-          "admit_year": "AY22/23 (Year 3)",
-          "academic_career": "E-Scholars Undergraduate",
-          "major": "Mechanical Engineering;",
-          "writeup": "I'm Isaac, Y3 in Environmental Engineering, with a passion for the Aerospace engineering and playing music.",
-          "picture_url": "https://nusu-my.sharepoint.com/personal/e1122235_u_nus_edu/Documents/Apps/Microsoft%20Forms/DE-Scholars%20Census%20AY2425/Question/photo_2024-08-10_12-30-14_Wen%20Kang,%20Isaac%20Poh.jpg",
-          "notable_achievements": null,
-          "interests_hobbies": "Playing guitar\nAeromodelling",
-          "linkedin_url": "linkedin.com/in/isaac-poh-wen-kang",
-          "instagram_url": "https://www.instagram.com/isaacpohwk/",
-          "github_url": "https://github.com/ANVBISIX"
-        }
+    "MPE": {
+      "yim-hau-yin-ethan": {
+        "name": "Yim Hau Yin, Ethan",
+        "admit_year": "AY22/23 (Year 3)",
+        "academic_career": "E-Scholars Undergraduate",
+        "major": "Mechanical Engineering;",
+        "writeup": "Hi! I'm Ethan and I major in Environmental Engineering, with a specialisation in Aeronautical Engineering. I have a keen interest in the aviation industry and aspire to be a pilot after I graduate. In my free time, I enjoy swimming, listening to music and shooting the breeze with my friends.\nFeel free to chat with me - I love getting to know new people!",
+        "picture_url": "https://nusu-my.sharepoint.com/personal/e1122235_u_nus_edu/Documents/Apps/Microsoft%20Forms/DE-Scholars%20Census%20AY2425/Question/Website%20Profile%20Pic_Hau%20Yin%20Ethan%20Yim.jpg",
+        "notable_achievements": "1. O-Level German\n2. RC4 Swimming IG Captain\n3. Outstanding Student Award ",
+        "interests_hobbies": "1. Swimming\n2. Shooting\n3. Driving",
+        "linkedin_url": "https://www.linkedin.com/in/ethan-yim-448a88246/",
+        "instagram_url": "https://www.instagram.com/ethan_hci/",
+        "github_url": null
+      },
+      "matthew-yip": {
+        "name": "Matthew Yip",
+        "admit_year": "AY22/23 (Year 3)",
+        "academic_career": "E-Scholars Undergraduate",
+        "major": "Mechanical Engineering;",
+        "writeup": "Hello! I am Matthew Yip, a final-year Environmental Engineering student with a Second Major in Computer Science. I have a deep passion for both engineering and tech, and this reflects in my hobbies that include 3D printing and coding with Raspberry Pis! ",
+        "picture_url": "/images/ay22-23/matthew-yip.jpg",
+        "notable_achievements": "NOC Munich AY 23/24\n",
+        "interests_hobbies": "F1\nCycling\n3D printing",
+        "linkedin_url": "https://www.linkedin.com/in/matthew-yip-ba0639154/",
+        "instagram_url": null,
+        "github_url": "https://github.com/matthewyip1511"
+      },
+      "tingkai-xue": {
+        "name": "Tingkai Xue",
+        "admit_year": "AY22/23 (Year 3)",
+        "academic_career": "E-Scholars Undergraduate",
+        "major": "Mechanical Engineering;",
+        "writeup": "Did first internship related to mechanical design and realized it's not my cup of tea. Doing physics-informed machine learning now.",
+        "picture_url": null,
+        "notable_achievements": "Cooked minute rice in 58s",
+        "interests_hobbies": "Performing Arts (Theatre)",
+        "linkedin_url": "https://www.linkedin.com/in/tingkai-xue",
+        "instagram_url": null,
+        "github_url": "https://github.com/xuetingkai"
+      },
+      "isaac-poh-wen-kang": {
+        "name": "Isaac Poh Wen Kang",
+        "admit_year": "AY22/23 (Year 3)",
+        "academic_career": "E-Scholars Undergraduate",
+        "major": "Mechanical Engineering;",
+        "writeup": "I'm Isaac, Y3 in Environmental Engineering, with a passion for the Aerospace engineering and playing music.",
+        "picture_url": "https://nusu-my.sharepoint.com/personal/e1122235_u_nus_edu/Documents/Apps/Microsoft%20Forms/DE-Scholars%20Census%20AY2425/Question/photo_2024-08-10_12-30-14_Wen%20Kang,%20Isaac%20Poh.jpg",
+        "notable_achievements": null,
+        "interests_hobbies": "Playing guitar\nAeromodelling",
+        "linkedin_url": "linkedin.com/in/isaac-poh-wen-kang",
+        "instagram_url": "https://www.instagram.com/isaacpohwk/",
+        "github_url": "https://github.com/ANVBISIX"
       }
+    }
   },
   "ay23-24": {
     "BME": [
@@ -308,7 +306,7 @@
           "picture_url": "https://nusu-my.sharepoint.com/personal/e1122235_u_nus_edu/Documents/Apps/Microsoft%20Forms/DE-Scholars%20Census%20AY2425/Question/amelia_Amelia%20Ong.jpg",
           "notable_achievements": null,
           "interests_hobbies": null,
-          "linkedin_url": "www.linkedin.com/in/ amelia-ong-397a81268",
+          "linkedin_url": "www.linkedin.com/in/amelia-ong-397a81268",
           "instagram_url": "https://www.instagram.com/aameliaa.o?igsh=Z3YzNW0wNDg5Y3gy&utm_source=qr",
           "github_url": null
         }
@@ -373,7 +371,7 @@
           "github_url": null
         }
       }
-      ],
+    ],
     "MPE": [
       {
         "Jing Wen Nga": {
@@ -998,7 +996,7 @@
         }
       }
     ],
-    "NM": [
+    "DS": [
       {
         "Claire Ng": {
           "admit_year": "AY24/25 (Year 1)",

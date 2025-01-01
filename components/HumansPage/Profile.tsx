@@ -7,7 +7,10 @@ import {
   Link as MuiLink,
   Typography,
 } from "@mui/material";
+import Stack from "@mui/material/Stack";
 import Image from "next/image";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import { GitHub } from "@mui/icons-material";
 
 interface ProfileProps {
   name: string;
@@ -18,6 +21,8 @@ interface ProfileProps {
   hobbies: string[];
   imageUrl: string;
   linkedInUrl: string;
+  instagramUrl: string;
+  githubUrl: string;
 }
 
 const Profile: React.FC<ProfileProps> = ({
@@ -29,6 +34,8 @@ const Profile: React.FC<ProfileProps> = ({
   hobbies,
   imageUrl,
   linkedInUrl,
+  instagramUrl,
+  githubUrl,
 }) => {
   return (
     <Box sx={{ maxWidth: 800, margin: "auto", padding: 4 }}>
@@ -45,14 +52,38 @@ const Profile: React.FC<ProfileProps> = ({
           </Typography>
           <Typography paragraph>{introduction}</Typography>
           <Typography paragraph>{interests}</Typography>
-          <MuiLink
-            href={linkedInUrl}
-            target="_blank"
-            rel="noopener"
-            sx={{ mt: 2, display: "inline-flex", alignItems: "center" }}
-          >
-            <LinkedInIcon fontSize="small" sx={{ mr: 1 }} /> LinkedIn
-          </MuiLink>
+          <Stack>
+            {linkedInUrl && (
+              <MuiLink
+                href={linkedInUrl}
+                target="_blank"
+                rel="noopener"
+                sx={{ mt: 2, display: "inline-flex", alignItems: "center" }}
+              >
+                <LinkedInIcon fontSize="small" sx={{ mr: 1 }} /> LinkedIn
+              </MuiLink>
+            )}
+            {instagramUrl && (
+              <MuiLink
+                href={instagramUrl}
+                target="_blank"
+                rel="noopener"
+                sx={{ mt: 2, display: "inline-flex", alignItems: "center" }}
+              >
+                <InstagramIcon fontSize="small" sx={{ mr: 1 }} /> Instagram
+              </MuiLink>
+            )}
+            {githubUrl && (
+              <MuiLink
+                href={githubUrl}
+                target="_blank"
+                rel="noopener"
+                sx={{ mt: 2, display: "inline-flex", alignItems: "center" }}
+              >
+                <GitHub fontSize="small" sx={{ mr: 1 }} /> GitHub
+              </MuiLink>
+            )}
+          </Stack>
         </Box>
         <Box sx={{ ml: 4 }}>
           <Image
