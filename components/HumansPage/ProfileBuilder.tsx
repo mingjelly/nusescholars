@@ -1,5 +1,5 @@
 import Profile from "./Profile";
-import database from "C:/Users/matth/WebstormProjects/nusescholars/src/data/database.json";
+import database from "../../src/data/database.json"
 
 interface ProfileBuilderProps {
   name: string;
