@@ -4,7 +4,6 @@ import React from "react";
 import PageTemplate from "../../../components/PageTemplate";
 
 const Events: React.FC = () => {
-
   return (
     <PageTemplate>
       <div style={{ textAlign: "center", padding: "50px" }}>

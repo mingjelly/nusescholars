@@ -11,9 +11,7 @@ interface LinksProps {
   linkItems: LinkItem[]; // Array of gallery items
 }
 
-const LinkItems: React.FC<LinksProps> = ({
-  linkItems,
-}) => {
+const LinkItems: React.FC<LinksProps> = ({ linkItems }) => {
   return (
     <Box
       sx={{
