@@ -18,6 +18,7 @@ const PersonCards: React.FC<PersonCardsProps> = ({ personCards, title }) => {
       sx={{
         margin: "0 auto",
         padding: "2rem 1rem",
+        width: "70%",
       }}
     >
       <Typography variant="h3" component="h1" sx={{ textAlign: "center" }}>

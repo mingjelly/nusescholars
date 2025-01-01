@@ -12,8 +12,8 @@ export default function ProfilePage() {
   const batchName = path.basename(batchNamePath);
 
   return (
-      <PageTemplate>
-        <ProfileBuilder name={studentName} batch={batchName} major={majorName} />
-      </PageTemplate>
+    <PageTemplate>
+      <ProfileBuilder name={studentName} batch={batchName} major={majorName} />
+    </PageTemplate>
   );
 }
