@@ -25,3 +25,7 @@ body {
     text-wrap: balance;
   }
 }
+
+#profile-container {
+  font-family: "Courier Prime", monospace;
+}

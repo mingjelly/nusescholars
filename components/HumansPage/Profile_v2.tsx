@@ -26,7 +26,7 @@ interface ProfileProps {
   githubUrl: string;
 }
 
-const Profile_v2: React.FC<ProfileProps> = ({
+const Profile: React.FC<ProfileProps> = ({
   name,
   academicYear,
   course,
@@ -39,15 +39,19 @@ const Profile_v2: React.FC<ProfileProps> = ({
   githubUrl,
 }) => {
   return (
-    <Box sx={{ maxWidth: 800, margin: "auto", padding: 4, typography: "body1" }}>
+    <Box
+      sx={{ maxWidth: 800, margin: "auto", padding: 4, typography: "body1" }}
+      id="profile_container"
+    >
       {/* Header Section */}
       <Box sx={{ display: "flex", alignItems: "flex-start", mb: 4 }}>
-        <Box sx={{ flexShrink: 0, width: 200, height: 200, position: "relative" }}>
+        <Box sx={{ flexShrink: 0, position: "relative" }}>
           <Image
             src={imageUrl}
             alt={`${name}'s photo`}
-            layout="fill"
             objectFit="cover"
+            width={225}
+            height={300}
             style={{ borderRadius: 8 }}
           />
         </Box>
@@ -69,7 +73,11 @@ const Profile_v2: React.FC<ProfileProps> = ({
       <Divider sx={{ my: 4 }} />
 
       {/* More About Me Section */}
-      <Typography variant="h5" gutterBottom>
+      <Typography
+        variant="h4"
+        align="center"
+        sx={{ fontWeight: "bold", mb: 3, mt: 4 }}
+      >
         More about me!
       </Typography>
       <Typography variant="body1" paragraph>
@@ -82,7 +90,11 @@ const Profile_v2: React.FC<ProfileProps> = ({
       <Divider sx={{ my: 4 }} />
 
       {/* Notable Achievements Section */}
-      <Typography variant="h5" gutterBottom>
+      <Typography
+        variant="h4"
+        align="center"
+        sx={{ fontWeight: "bold", mb: 3, mt: 4 }}
+      >
         Notable Achievements
       </Typography>
       <List>
@@ -96,7 +108,11 @@ const Profile_v2: React.FC<ProfileProps> = ({
       <Divider sx={{ my: 4 }} />
 
       {/* Connect With Me Section */}
-      <Typography variant="h5" gutterBottom align="center">
+      <Typography
+        variant="h4"
+        align="center"
+        sx={{ fontWeight: "bold", mb: 3, mt: 4 }}
+      >
         Connect with me!
       </Typography>
       <Stack direction="row" spacing={4} justifyContent="center">
@@ -120,4 +136,4 @@ const Profile_v2: React.FC<ProfileProps> = ({
   );
 };
 
-export default Profile_v2;
+export default Profile;
