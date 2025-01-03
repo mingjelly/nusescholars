@@ -51,7 +51,7 @@ const Profile: React.FC<ProfileProps> = ({
             alt={`${name}'s photo`}
             objectFit="cover"
             width={225}
-            height={300}
+            height={281}
             style={{ borderRadius: 8 }}
           />
         </Box>
