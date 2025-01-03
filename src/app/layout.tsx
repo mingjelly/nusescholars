@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Courier_Prime } from "next/font/google";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -14,10 +13,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-const courierPrime = Courier_Prime({
-  weight: "400", // Add other weights if needed
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "DE-Scholars",
