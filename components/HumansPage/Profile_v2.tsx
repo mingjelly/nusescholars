@@ -41,11 +41,10 @@ const Profile: React.FC<ProfileProps> = ({
   return (
     <Box
       sx={{ maxWidth: 800, margin: "auto", padding: 4, typography: "body1" }}
-      id="profile_container"
     >
       {/* Header Section */}
-      <Box sx={{ display: "flex", alignItems: "flex-start", mb: 4 }}>
-        <Box sx={{ flexShrink: 0, position: "relative" }}>
+      <Box sx={{ display: "flex", alignItems: "center", mb: 4, flexDirection: { xs: "column", md: "row" }}}>
+        <Box sx={{ flexShrink: 0, position: "relative", mb: { xs: 2, md: 0 } }}>
           <Image
             src={imageUrl}
             alt={`${name}'s photo`}
@@ -55,16 +54,16 @@ const Profile: React.FC<ProfileProps> = ({
             style={{ borderRadius: 8 }}
           />
         </Box>
-        <Box sx={{ ml: 4, flexGrow: 1 }}>
-          <Typography variant="h4" gutterBottom>
+        <Box sx={{ ml: 4, flexGrow: 1}}>
+          <Typography variant="h4" sx={{fontFamily: "monospace", textAlign: "left"}} gutterBottom>
             Hi! I’m {name}
           </Typography>
-          <Typography variant="body1" sx={{ mb: 2 }}>
+          <Typography variant="body1" sx={{ mb: 2, fontFamily: "monospace" }}>
             I study {course} as a {academicYear} year student.
             <br />
             Currently, I am working on... (customizable intro).
           </Typography>
-          <Typography variant="body2">
+          <Typography variant="body1" sx={{fontFamily: "monospace"}}>
             You can talk to me about... (customized topics).
           </Typography>
         </Box>
@@ -76,7 +75,8 @@ const Profile: React.FC<ProfileProps> = ({
       <Typography
         variant="h4"
         align="center"
-        sx={{ fontWeight: "bold", mb: 3, mt: 4 }}
+        fontFamily="monospace"
+        sx={{ fontWeight: "bold", mb: 3, mt: 4}}
       >
         More about me!
       </Typography>
@@ -93,6 +93,7 @@ const Profile: React.FC<ProfileProps> = ({
       <Typography
         variant="h4"
         align="center"
+        fontFamily="monospace"
         sx={{ fontWeight: "bold", mb: 3, mt: 4 }}
       >
         Notable Achievements
@@ -111,6 +112,7 @@ const Profile: React.FC<ProfileProps> = ({
       <Typography
         variant="h4"
         align="center"
+        fontFamily="monospace"
         sx={{ fontWeight: "bold", mb: 3, mt: 4 }}
       >
         Connect with me!
