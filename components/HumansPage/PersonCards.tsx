@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
+// import Image from "next/image";
 
 export interface PersonCardItem {
   image: string; // Image URL
@@ -57,6 +58,16 @@ const PersonCards: React.FC<PersonCardsProps> = ({ personCards, title }) => {
                   borderRadius: "8px",
                 }}
               />
+              {/* <Image
+                src={card.image}
+                alt={card.name}
+                layout="responsive"
+                width={800}
+                height={500}
+                style={{
+                  borderRadius: "8px",
+                }}
+              /> */}
             </Box>
             <Typography
               variant="h6"
