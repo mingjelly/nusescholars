@@ -1,7 +1,6 @@
 import PageTemplate from "../../../components/PageTemplate";
 import LinkItems from "../../../components/HumansPage/LinkItems";
 import HeroSection from "../../../components/HeroSection";
-import Typography from "@mui/material/Typography";
 
 export default function Page() {
   const baseLink = "/humans-of-descholars/";
