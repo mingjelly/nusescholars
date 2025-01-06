@@ -1,6 +1,6 @@
 import PageTemplate from "../../../components/PageTemplate";
 import LinkItems from "../../../components/HumansPage/LinkItems";
-import Typography from "@mui/material/Typography";
+import HeroSection from "../../../components/HeroSection";
 
 export default function Page() {
   const baseLink = "/humans-of-descholars/";
@@ -29,13 +29,11 @@ export default function Page() {
 
   return (
     <PageTemplate>
-      <Typography variant="h3" component="h1" sx={{ textAlign: "center" }}>
-        HUMANS OF DE-SCHOLARS
-      </Typography>
-      <Typography variant="h5" component="h1" sx={{ textAlign: "center" }}>
-        Welcome to the Humans of DE-scholars page! Select the batch below to
-        find out more about us :)
-      </Typography>
+      <HeroSection
+        title="Humans of DE-Scholars"
+        description="Welcome to the Humans of DE-scholars page! Select the batch below to
+        find out more about us :)"
+      />
       <LinkItems linkItems={batchItems} />
     </PageTemplate>
   );

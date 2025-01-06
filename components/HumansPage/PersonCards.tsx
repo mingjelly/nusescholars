@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
+// import Image from "next/image";
 
 export interface PersonCardItem {
   image: string; // Image URL
@@ -21,7 +22,15 @@ const PersonCards: React.FC<PersonCardsProps> = ({ personCards, title }) => {
         width: "70%",
       }}
     >
-      <Typography variant="h3" component="h1" sx={{ textAlign: "center" }}>
+      <Typography
+        variant="h3"
+        component="h1"
+        sx={{
+          textAlign: "center",
+          fontFamily: "monospace",
+          mb: "20px",
+          }}
+        >
         {title}
       </Typography>
       <Grid container spacing={4}>
@@ -49,6 +58,16 @@ const PersonCards: React.FC<PersonCardsProps> = ({ personCards, title }) => {
                   borderRadius: "8px",
                 }}
               />
+              {/* <Image
+                src={card.image}
+                alt={card.name}
+                layout="responsive"
+                width={800}
+                height={500}
+                style={{
+                  borderRadius: "8px",
+                }}
+              /> */}
             </Box>
             <Typography
               variant="h6"
@@ -56,6 +75,7 @@ const PersonCards: React.FC<PersonCardsProps> = ({ personCards, title }) => {
                 marginTop: "0.5rem",
                 textAlign: "center",
                 fontWeight: "bold",
+                fontFamily: "monospace",
               }}
             >
               {card.name}

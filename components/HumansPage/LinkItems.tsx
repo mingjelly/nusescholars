@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
+// import Image from "next/image";
 
 interface LinkItem {
   title: string;
@@ -21,7 +22,7 @@ const LinkItems: React.FC<LinksProps> = ({ linkItems }) => {
     >
       <Grid container spacing={4}>
         {linkItems.map((item, index) => (
-          <Grid item xs={12} sm={6} key={index}>
+          <Grid item xs={12} sm={12} md={6} key={index}>
             <Box
               component="a"
               href={item.link}
@@ -44,6 +45,16 @@ const LinkItems: React.FC<LinksProps> = ({ linkItems }) => {
                   borderRadius: "8px",
                 }}
               />
+              {/* <Image
+                src={item.image}
+                alt={item.title}
+                layout="responsive"
+                width={800}
+                height={500}
+                style={{
+                  borderRadius: "8px",
+                }}
+              /> */}
               <Typography
                 variant="h3"
                 sx={{
@@ -53,6 +64,7 @@ const LinkItems: React.FC<LinksProps> = ({ linkItems }) => {
                   transform: "translateX(-50%)",
                   color: "white",
                   fontWeight: "bold",
+                  fontFamily: "monospace",
                   textShadow: "0px 2px 4px rgba(0, 0, 0, 0.5)",
                   backgroundColor: "rgba(0, 0, 0, 0.4)",
                   padding: "0.5rem 1rem",

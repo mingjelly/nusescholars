@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 interface SectionProps {
   title: string;
@@ -46,7 +47,15 @@ const Section: React.FC<SectionProps> = ({ title, description, image, reverse = 
         <p style={styles.description}>{description}</p>
       </div>
       <div style={styles.imageContainer}>
-        <img src={image} alt={title} style={styles.image} />
+        <Image
+          src={image}
+          alt={title}
+          width={800}
+          height={500}
+          style={styles.image}
+          placeholder="blur" // Optional: Use blur placeholder if available
+          blurDataURL={image} // Optional: Provide a base64-encoded placeholder
+        />
       </div>
     </div>
   );
@@ -79,7 +88,6 @@ const styles = {
     alignItems: "center",
   } as React.CSSProperties,
   image: {
-    maxWidth: "100%",
     borderRadius: "8px",
     objectFit: "cover",
   } as React.CSSProperties,
