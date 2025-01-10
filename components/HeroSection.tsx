@@ -27,10 +27,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, description }) => {
       >
         {title}
       </Typography>
-      <Typography
-        variant="body1"
-        sx={{fontFamily: "monospace"}}
-      >
+      <Typography variant="body1" sx={{ fontFamily: "monospace" }}>
         {description}
       </Typography>
     </Box>

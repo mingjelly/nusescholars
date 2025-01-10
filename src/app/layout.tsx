@@ -13,7 +13,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-
 export const metadata: Metadata = {
   title: "DE-Scholars",
   description: "Created by the DE-Scholars Committee (with love)",

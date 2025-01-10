@@ -8,7 +8,12 @@ interface SectionProps {
   reverse?: boolean;
 }
 
-const Section: React.FC<SectionProps> = ({ title, description, image, reverse = false }) => {
+const Section: React.FC<SectionProps> = ({
+  title,
+  description,
+  image,
+  reverse = false,
+}) => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   // Detect screen size and update state
@@ -34,8 +39,8 @@ const Section: React.FC<SectionProps> = ({ title, description, image, reverse = 
         flexDirection: isSmallScreen
           ? "column" // Stack vertically on small screens
           : reverse
-          ? "row-reverse" // Reverse order on larger screens
-          : "row", // Default side-by-side
+            ? "row-reverse" // Reverse order on larger screens
+            : "row", // Default side-by-side
         alignItems: "center",
         justifyContent: "space-between",
         padding: "40px 20px",

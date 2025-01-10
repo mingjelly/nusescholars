@@ -29,8 +29,8 @@ const PersonCards: React.FC<PersonCardsProps> = ({ personCards, title }) => {
           textAlign: "center",
           fontFamily: "monospace",
           mb: "20px",
-          }}
-        >
+        }}
+      >
         {title}
       </Typography>
       <Grid container spacing={4}>
