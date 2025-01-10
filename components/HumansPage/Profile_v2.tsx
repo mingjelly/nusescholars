@@ -38,6 +38,8 @@ const Profile: React.FC<ProfileProps> = ({
   instagramUrl,
   githubUrl,
 }) => {
+  const showConnectWithMe: boolean = !!(linkedInUrl || instagramUrl || githubUrl);
+
   return (
     <Box
       sx={{ maxWidth: 800, margin: "auto", padding: 4, typography: "body1" }}
@@ -117,17 +119,17 @@ const Profile: React.FC<ProfileProps> = ({
         ))}
       </List>
 
-      <Divider sx={{ my: 4 }} />
+      {showConnectWithMe && (<Divider sx={{ my: 4 }} />)}
 
       {/* Connect With Me Section */}
-      <Typography
+      {showConnectWithMe && (<Typography
         variant="h4"
         align="center"
         fontFamily="monospace"
         sx={{ fontWeight: "bold", mb: 3, mt: 4 }}
       >
         Connect with me!
-      </Typography>
+      </Typography>)}
       <Stack direction="row" spacing={4} justifyContent="center">
         {linkedInUrl && (
           <MuiLink href={linkedInUrl} target="_blank" rel="noopener">
