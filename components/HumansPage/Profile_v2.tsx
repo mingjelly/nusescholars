@@ -7,19 +7,17 @@ import {
   Link as MuiLink,
   Stack,
   Divider,
-  List,
-  ListItem,
-  ListItemText,
 } from "@mui/material";
 import Image from "next/image";
+import InformationBox from "./InformationBox";
 
 interface ProfileProps {
   name: string;
   academicYear: string;
   course: string;
   introduction: string;
-  interests: string;
-  hobbies: string[];
+  interestsAndHobbies: string;
+  notableAchievements: string;
   imageUrl: string;
   linkedInUrl: string;
   instagramUrl: string;
@@ -31,14 +29,18 @@ const Profile: React.FC<ProfileProps> = ({
   academicYear,
   course,
   introduction,
-  interests,
-  hobbies,
+  interestsAndHobbies,
+  notableAchievements,
   imageUrl,
   linkedInUrl,
   instagramUrl,
   githubUrl,
 }) => {
-  const showConnectWithMe: boolean = !!(linkedInUrl || instagramUrl || githubUrl);
+  const showConnectWithMe: boolean = !!(
+    linkedInUrl ||
+    instagramUrl ||
+    githubUrl
+  );
 
   return (
     <Box
@@ -96,40 +98,36 @@ const Profile: React.FC<ProfileProps> = ({
       <Typography variant="body1" paragraph>
         {introduction}
       </Typography>
-      <Typography variant="body1" paragraph>
-        {interests}
-      </Typography>
-
-      <Divider sx={{ my: 4 }} />
 
       {/* Notable Achievements Section */}
-      <Typography
-        variant="h4"
-        align="center"
-        fontFamily="monospace"
-        sx={{ fontWeight: "bold", mb: 3, mt: 4 }}
-      >
-        Notable Achievements
-      </Typography>
-      <List>
-        {hobbies.map((hobby, index) => (
-          <ListItem key={index} disableGutters>
-            <ListItemText primary={`• ${hobby}`} />
-          </ListItem>
-        ))}
-      </List>
+      {notableAchievements && (
+        <InformationBox
+          header={"Notable Achievements"}
+          data={notableAchievements}
+        />
+      )}
 
-      {showConnectWithMe && (<Divider sx={{ my: 4 }} />)}
+      {/* Interests and Hobbies Section */}
+      {interestsAndHobbies && (
+        <InformationBox
+          header={"Interests & Hobbies"}
+          data={interestsAndHobbies}
+        />
+      )}
+
+      {showConnectWithMe && <Divider sx={{ my: 4 }} />}
 
       {/* Connect With Me Section */}
-      {showConnectWithMe && (<Typography
-        variant="h4"
-        align="center"
-        fontFamily="monospace"
-        sx={{ fontWeight: "bold", mb: 3, mt: 4 }}
-      >
-        Connect with me!
-      </Typography>)}
+      {showConnectWithMe && (
+        <Typography
+          variant="h4"
+          align="center"
+          fontFamily="monospace"
+          sx={{ fontWeight: "bold", mb: 3, mt: 4 }}
+        >
+          Connect with me!
+        </Typography>
+      )}
       <Stack direction="row" spacing={4} justifyContent="center">
         {linkedInUrl && (
           <MuiLink href={linkedInUrl} target="_blank" rel="noopener">
