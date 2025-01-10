@@ -18,8 +18,8 @@ interface ProfileProps {
   academicYear: string;
   course: string;
   introduction: string;
-  interests: string;
-  hobbies: string[];
+  interestsAndHobbies: string;
+  notableAchievements: string;
   imageUrl: string;
   linkedInUrl: string;
   instagramUrl: string;
@@ -31,14 +31,18 @@ const Profile: React.FC<ProfileProps> = ({
   academicYear,
   course,
   introduction,
-  interests,
-  hobbies,
+  interestsAndHobbies,
+  notableAchievements,
   imageUrl,
   linkedInUrl,
   instagramUrl,
   githubUrl,
 }) => {
-  const showConnectWithMe: boolean = !!(linkedInUrl || instagramUrl || githubUrl);
+  const showConnectWithMe: boolean = !!(
+    linkedInUrl ||
+    instagramUrl ||
+    githubUrl
+  );
 
   return (
     <Box
@@ -96,40 +100,74 @@ const Profile: React.FC<ProfileProps> = ({
       <Typography variant="body1" paragraph>
         {introduction}
       </Typography>
-      <Typography variant="body1" paragraph>
-        {interests}
-      </Typography>
 
-      <Divider sx={{ my: 4 }} />
+      {notableAchievements && <Divider sx={{ my: 4 }} />}
 
       {/* Notable Achievements Section */}
-      <Typography
-        variant="h4"
-        align="center"
-        fontFamily="monospace"
-        sx={{ fontWeight: "bold", mb: 3, mt: 4 }}
-      >
-        Notable Achievements
-      </Typography>
-      <List>
-        {hobbies.map((hobby, index) => (
-          <ListItem key={index} disableGutters>
-            <ListItemText primary={`• ${hobby}`} />
-          </ListItem>
-        ))}
-      </List>
+      {notableAchievements && (
+        <Typography
+          variant="h4"
+          align="center"
+          fontFamily="monospace"
+          sx={{ fontWeight: "bold", mb: 3, mt: 4 }}
+        >
+          Notable Achievements
+        </Typography>
+      )}
+      {notableAchievements && (
+          <List>
+            {notableAchievements
+                .split("\n")
+                .map((achievement) => achievement.replace(/^\d+\.\s*/, "").trim()) // Trim numbers and whitespace
+                .filter((achievement) => achievement !== "") // Remove empty strings
+                .map((achievement, index) => (
+                    <ListItem key={index} disableGutters>
+                      <ListItemText primary={`• ${achievement}`} />
+                    </ListItem>
+                ))}
+          </List>
+      )}
 
-      {showConnectWithMe && (<Divider sx={{ my: 4 }} />)}
+      {interestsAndHobbies && <Divider sx={{ my: 4 }} />}
+
+      {/* Notable Achievements Section */}
+      {interestsAndHobbies && (
+        <Typography
+          variant="h4"
+          align="center"
+          fontFamily="monospace"
+          sx={{ fontWeight: "bold", mb: 3, mt: 4 }}
+        >
+          Interests & Hobbies
+        </Typography>
+      )}
+      {interestsAndHobbies && (
+          <List>
+            {interestsAndHobbies
+                .split("\n")
+                .map((achievement) => achievement.replace(/^\d+\.\s*/, "").trim()) // Trim numbers and whitespace
+                .filter((achievement) => achievement !== "") // Remove empty strings
+                .map((achievement, index) => (
+                    <ListItem key={index} disableGutters>
+                      <ListItemText primary={`• ${achievement}`} />
+                    </ListItem>
+                ))}
+          </List>
+      )}
+
+      {showConnectWithMe && <Divider sx={{ my: 4 }} />}
 
       {/* Connect With Me Section */}
-      {showConnectWithMe && (<Typography
-        variant="h4"
-        align="center"
-        fontFamily="monospace"
-        sx={{ fontWeight: "bold", mb: 3, mt: 4 }}
-      >
-        Connect with me!
-      </Typography>)}
+      {showConnectWithMe && (
+        <Typography
+          variant="h4"
+          align="center"
+          fontFamily="monospace"
+          sx={{ fontWeight: "bold", mb: 3, mt: 4 }}
+        >
+          Connect with me!
+        </Typography>
+      )}
       <Stack direction="row" spacing={4} justifyContent="center">
         {linkedInUrl && (
           <MuiLink href={linkedInUrl} target="_blank" rel="noopener">

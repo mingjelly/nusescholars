@@ -22,9 +22,9 @@ export default function ProfileBuilder({
       academicYear={data.admit_year}
       course={data.major}
       introduction={data.writeup}
-      interests={data.interests_hobbies}
-      hobbies={["Hobby1", "Hobby2"]}
-      imageUrl={"/images/" + batch + "/" + name + ".jpg"}
+      interestsAndHobbies={data.interests_hobbies}
+      notableAchievements={data.notable_achievements}
+      imageUrl={`/images/${batch}/${name}.jpg`}
       linkedInUrl={data.linkedin_url}
       instagramUrl={data.instagram_url}
       githubUrl={data.github_url}
