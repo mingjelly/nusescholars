@@ -7,11 +7,9 @@ import {
   Link as MuiLink,
   Stack,
   Divider,
-  List,
-  ListItem,
-  ListItemText,
 } from "@mui/material";
 import Image from "next/image";
+import InformationBox from "./InformationBox";
 
 interface ProfileProps {
   name: string;
@@ -101,58 +99,20 @@ const Profile: React.FC<ProfileProps> = ({
         {introduction}
       </Typography>
 
-      {notableAchievements && <Divider sx={{ my: 4 }} />}
-
       {/* Notable Achievements Section */}
       {notableAchievements && (
-        <Typography
-          variant="h4"
-          align="center"
-          fontFamily="monospace"
-          sx={{ fontWeight: "bold", mb: 3, mt: 4 }}
-        >
-          Notable Achievements
-        </Typography>
+        <InformationBox
+          header={"Notable Achievements"}
+          data={notableAchievements}
+        />
       )}
+
+      {/* Interests and Hobbies Section */}
       {notableAchievements && (
-          <List>
-            {notableAchievements
-                .split("\n")
-                .map((achievement) => achievement.replace(/^\d+\.\s*/, "").trim()) // Trim numbers and whitespace
-                .filter((achievement) => achievement !== "") // Remove empty strings
-                .map((achievement, index) => (
-                    <ListItem key={index} disableGutters>
-                      <ListItemText primary={`• ${achievement}`} />
-                    </ListItem>
-                ))}
-          </List>
-      )}
-
-      {interestsAndHobbies && <Divider sx={{ my: 4 }} />}
-
-      {/* Notable Achievements Section */}
-      {interestsAndHobbies && (
-        <Typography
-          variant="h4"
-          align="center"
-          fontFamily="monospace"
-          sx={{ fontWeight: "bold", mb: 3, mt: 4 }}
-        >
-          Interests & Hobbies
-        </Typography>
-      )}
-      {interestsAndHobbies && (
-          <List>
-            {interestsAndHobbies
-                .split("\n")
-                .map((achievement) => achievement.replace(/^\d+\.\s*/, "").trim()) // Trim numbers and whitespace
-                .filter((achievement) => achievement !== "") // Remove empty strings
-                .map((achievement, index) => (
-                    <ListItem key={index} disableGutters>
-                      <ListItemText primary={`• ${achievement}`} />
-                    </ListItem>
-                ))}
-          </List>
+        <InformationBox
+          header={"Interests & Hobbies"}
+          data={interestsAndHobbies}
+        />
       )}
 
       {showConnectWithMe && <Divider sx={{ my: 4 }} />}
