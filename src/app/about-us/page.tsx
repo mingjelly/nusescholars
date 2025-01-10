@@ -9,10 +9,7 @@ const AboutUs: React.FC = () => {
   return (
     <PageTemplate>
       {/* Hero Section */}
-      <HeroSection
-        title="About Us"
-        description="Learn more about us!"
-      />
+      <HeroSection title="About Us" description="Learn more about us!" />
 
       {/* Introduction Section */}
       <Section

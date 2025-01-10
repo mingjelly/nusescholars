@@ -43,7 +43,14 @@ const Profile: React.FC<ProfileProps> = ({
       sx={{ maxWidth: 800, margin: "auto", padding: 4, typography: "body1" }}
     >
       {/* Header Section */}
-      <Box sx={{ display: "flex", alignItems: "center", mb: 4, flexDirection: { xs: "column", md: "row" }}}>
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          mb: 4,
+          flexDirection: { xs: "column", md: "row" },
+        }}
+      >
         <Box sx={{ flexShrink: 0, position: "relative", mb: { xs: 2, md: 0 } }}>
           <Image
             src={imageUrl}
@@ -54,8 +61,12 @@ const Profile: React.FC<ProfileProps> = ({
             style={{ borderRadius: 8 }}
           />
         </Box>
-        <Box sx={{ ml: 4, flexGrow: 1}}>
-          <Typography variant="h4" sx={{fontFamily: "monospace", textAlign: "left"}} gutterBottom>
+        <Box sx={{ ml: 4, flexGrow: 1 }}>
+          <Typography
+            variant="h4"
+            sx={{ fontFamily: "monospace", textAlign: "left" }}
+            gutterBottom
+          >
             Hi! I’m {name}
           </Typography>
           <Typography variant="body1" sx={{ mb: 2, fontFamily: "monospace" }}>
@@ -63,7 +74,7 @@ const Profile: React.FC<ProfileProps> = ({
             <br />
             Currently, I am working on... (customizable intro).
           </Typography>
-          <Typography variant="body1" sx={{fontFamily: "monospace"}}>
+          <Typography variant="body1" sx={{ fontFamily: "monospace" }}>
             You can talk to me about... (customized topics).
           </Typography>
         </Box>
@@ -76,7 +87,7 @@ const Profile: React.FC<ProfileProps> = ({
         variant="h4"
         align="center"
         fontFamily="monospace"
-        sx={{ fontWeight: "bold", mb: 3, mt: 4}}
+        sx={{ fontWeight: "bold", mb: 3, mt: 4 }}
       >
         More about me!
       </Typography>

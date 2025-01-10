@@ -1,6 +1,6 @@
 // import Profile from "./Profile";
 import Profile_v2 from "./Profile_v2";
-import database from "../../src/data/database.json"
+import database from "../../src/data/database.json";
 
 interface ProfileBuilderProps {
   name: string;
