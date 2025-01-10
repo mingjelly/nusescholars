@@ -13,19 +13,12 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import Box from "@mui/material/Box";
-import SearchIcon from "@mui/icons-material/Search";
-import TextField from "@mui/material/TextField";
 
 const Navbar: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [showSearch, setShowSearch] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileOpen(!mobileOpen);
-  };
-
-  const toggleSearch = () => {
-    setShowSearch(!showSearch);
   };
 
   // Links for navigation
@@ -34,7 +27,7 @@ const Navbar: React.FC = () => {
     { label: "Humans of De-Scholars", href: "/humans-of-descholars" },
     { label: "Events", href: "/events" },
     {
-      label: "Resources",
+      label: "Resources (External Site)",
       href: "https://sites.google.com/view/nus-e-scholars/home?authuser=0",
     }, // De-Scholars Resource Google Site
   ];
@@ -73,18 +66,6 @@ const Navbar: React.FC = () => {
               <Button color="inherit">{link.label}</Button>
             </Link>
           ))}
-          {showSearch && (
-            <TextField
-              size="small"
-              variant="outlined"
-              placeholder="Search..."
-              autoFocus
-              sx={{ width: "200px" }}
-            />
-          )}
-          <IconButton color="inherit" onClick={toggleSearch}>
-            <SearchIcon />
-          </IconButton>
         </Box>
 
         {/* Mobile Menu Icon */}
