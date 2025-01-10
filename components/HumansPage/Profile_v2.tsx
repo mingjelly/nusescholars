@@ -108,7 +108,7 @@ const Profile: React.FC<ProfileProps> = ({
       )}
 
       {/* Interests and Hobbies Section */}
-      {notableAchievements && (
+      {interestsAndHobbies && (
         <InformationBox
           header={"Interests & Hobbies"}
           data={interestsAndHobbies}
