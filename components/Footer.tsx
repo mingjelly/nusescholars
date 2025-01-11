@@ -10,10 +10,7 @@ const Footer: React.FC = () => {
     { label: "About Us", href: "/about-us" },
     { label: "Humans of De-Scholars", href: "/humans-of-descholars" },
     { label: "Events", href: "/events" },
-    {
-      label: "Resources",
-      href: "https://sites.google.com/view/nus-e-scholars/home?authuser=0",
-    }, // De-Scholars Resource Google Site
+    { label: "Resources", href: "/resources" },
   ];
 
   return (
