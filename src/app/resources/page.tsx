@@ -31,12 +31,17 @@ const Resources: React.FC = () => {
         title="Resources"
       />
       <div style={{ textAlign: "center", padding: "50px", fontSize: "24px" }}>
-        <p>This page will redirect you to the Engineering Scholars Programme in {countdown} seconds.</p>
+        <p>This page will redirect you to the Engineering Scholars Programme Resource Page in {countdown} seconds.</p>
         <p>
           If you want to go there immediately,{" "}
           <a href="https://sites.google.com/view/nus-e-scholars/home?authuser=0" style={{ textDecoration: "underline" }}>
             click here
           </a>.
+        </p>
+        <p style={{ marginTop: "20px" }}>
+          <a href="/" style={{ textDecoration: "underline" }}>
+            Go back to home
+          </a>
         </p>
       </div>
     </PageTemplate>
