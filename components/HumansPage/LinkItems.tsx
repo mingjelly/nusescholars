@@ -45,16 +45,6 @@ const LinkItems: React.FC<LinksProps> = ({ linkItems }) => {
                   borderRadius: "8px",
                 }}
               />
-              {/* <Image
-                src={item.image}
-                alt={item.title}
-                layout="responsive"
-                width={800}
-                height={500}
-                style={{
-                  borderRadius: "8px",
-                }}
-              /> */}
               <Typography
                 variant="h3"
                 sx={{
