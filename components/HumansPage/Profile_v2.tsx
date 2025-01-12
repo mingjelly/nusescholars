@@ -75,12 +75,12 @@ const Profile: React.FC<ProfileProps> = ({
           </Typography>
           <Typography variant="body1" sx={{ mb: 2, fontFamily: "monospace" }}>
             I study {course} as a {academicYear} year student.
-            <br />
-            Currently, I am working on... (customizable intro).
+            {/* <br />
+            Currently, I am working on... (customizable intro). */}
           </Typography>
-          <Typography variant="body1" sx={{ fontFamily: "monospace" }}>
+          {/* <Typography variant="body1" sx={{ fontFamily: "monospace" }}>
             You can talk to me about... (customized topics).
-          </Typography>
+          </Typography> */}
         </Box>
       </Box>
 
