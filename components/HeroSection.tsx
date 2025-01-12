@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 
 interface HeroSectionProps {
   title: string;
-  description: string;
+  description?: string;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({ title, description }) => {
