@@ -7,7 +7,6 @@ import HeroSection from "../../../components/HeroSection";
 
 const Resources: React.FC = () => {
   const [countdown, setCountdown] = useState(5);
-  const [width, setWidth] = useState(100); // Initial width for the loading bar
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -17,7 +16,6 @@ const Resources: React.FC = () => {
           window.location.href = "https://sites.google.com/view/nus-e-scholars/home?authuser=0";
           return 0;
         }
-        setWidth((prevWidth) => prevWidth - 20); // Decrease width for each second
         return prev - 1;
       });
     }, 1000);
