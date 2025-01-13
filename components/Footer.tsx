@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import { Box, Typography, TextField, Button, IconButton } from "@mui/material";
-import FacebookIcon from "@mui/icons-material/Facebook";
+import { Box, Typography, IconButton } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Link from "next/link";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Footer: React.FC = () => {
   const navLinks = [
@@ -66,6 +66,7 @@ const Footer: React.FC = () => {
         >
           Connect with Us!
         </Typography>
+          <Link href="https://www.linkedin.com/groups/12487572/" passHref>
         <Box
           sx={{
             display: "flex",
@@ -75,49 +76,35 @@ const Footer: React.FC = () => {
           }}
         >
           <IconButton sx={{ color: "white" }} aria-label="Facebook">
-            <FacebookIcon />
+            <LinkedInIcon />
           </IconButton>
-          <Typography>nusdescholars...</Typography>
+            <Typography
+                sx={{
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    "&:hover": { color: "gray" },
+                }}
+            >
+                E-Scholars & GEP
+            </Typography>
         </Box>
-        <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
-          <IconButton sx={{ color: "white" }} aria-label="Instagram">
-            <InstagramIcon />
-          </IconButton>
-          <Typography>nusdescholars...</Typography>
-        </Box>
-      </Box>
-
-      {/* Column 3: Newsletter */}
-      <Box sx={{ flex: "1 1 300px", marginBottom: "16px" }}>
-        <Typography
-          variant="h6"
-          sx={{ fontWeight: "bold", marginBottom: "16px" }}
-        >
-          Email Newsletter
-        </Typography>
-        <Box sx={{ display: "flex", alignItems: "center" }}>
-          <TextField
-            placeholder="Email"
-            variant="outlined"
-            size="small"
-            sx={{
-              flex: "1",
-              backgroundColor: "white",
-              borderRadius: "4px",
-              marginRight: "8px",
-            }}
-          />
-          <Button
-            variant="contained"
-            sx={{
-              backgroundColor: "white",
-              color: "black",
-              "&:hover": { backgroundColor: "gray" },
-            }}
-          >
-            &gt;
-          </Button>
-        </Box>
+              </Link>
+        <Link href="https://www.instagram.com/nusescholars" passHref>
+          <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            <IconButton sx={{ color: "white" }} aria-label="Instagram">
+              <InstagramIcon />
+            </IconButton>
+              <Typography
+                  sx={{
+                      cursor: "pointer",
+                      textDecoration: "none",
+                      "&:hover": { color: "gray" },
+                  }}
+              >
+                  @nusescholars
+              </Typography>
+          </Box>
+        </Link>
       </Box>
     </Box>
   );
