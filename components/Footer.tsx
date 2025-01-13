@@ -66,6 +66,7 @@ const Footer: React.FC = () => {
         >
           Connect with Us!
         </Typography>
+          <Link href="https://www.linkedin.com/groups/12487572/" passHref>
         <Box
           sx={{
             display: "flex",
@@ -87,6 +88,7 @@ const Footer: React.FC = () => {
                 nusdescholars...
             </Typography>
         </Box>
+              </Link>
         <Link href="https://www.instagram.com/nusescholars" passHref>
           <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
             <IconButton sx={{ color: "white" }} aria-label="Instagram">
