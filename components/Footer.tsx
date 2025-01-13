@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
                     "&:hover": { color: "gray" },
                 }}
             >
-                nusdescholars...
+                E-Scholars & GEP
             </Typography>
         </Box>
               </Link>
