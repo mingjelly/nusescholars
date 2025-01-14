@@ -3,7 +3,6 @@ import React from "react";
 import { Box, Typography, IconButton } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Link from "next/link";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Footer: React.FC = () => {
   const navLinks = [
