@@ -66,43 +66,43 @@ const Footer: React.FC = () => {
         >
           Connect with Us!
         </Typography>
-          <Link href="https://www.linkedin.com/groups/12487572/" passHref>
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            gap: "8px",
-            marginBottom: "8px",
-          }}
-        >
-          <IconButton sx={{ color: "white" }} aria-label="Facebook">
-            <LinkedInIcon />
-          </IconButton>
+        <Link href="https://www.linkedin.com/groups/12487572/" passHref>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: "8px",
+              marginBottom: "8px",
+            }}
+          >
+            <IconButton sx={{ color: "white" }} aria-label="Facebook">
+              <LinkedInIcon />
+            </IconButton>
             <Typography
-                sx={{
-                    cursor: "pointer",
-                    textDecoration: "none",
-                    "&:hover": { color: "gray" },
-                }}
+              sx={{
+                cursor: "pointer",
+                textDecoration: "none",
+                "&:hover": { color: "gray" },
+              }}
             >
-                E-Scholars & GEP
+              E-Scholars & GEP
             </Typography>
-        </Box>
-              </Link>
+          </Box>
+        </Link>
         <Link href="https://www.instagram.com/nusescholars" passHref>
           <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
             <IconButton sx={{ color: "white" }} aria-label="Instagram">
               <InstagramIcon />
             </IconButton>
-              <Typography
-                  sx={{
-                      cursor: "pointer",
-                      textDecoration: "none",
-                      "&:hover": { color: "gray" },
-                  }}
-              >
-                  @nusescholars
-              </Typography>
+            <Typography
+              sx={{
+                cursor: "pointer",
+                textDecoration: "none",
+                "&:hover": { color: "gray" },
+              }}
+            >
+              @nusescholars
+            </Typography>
           </Box>
         </Link>
       </Box>
