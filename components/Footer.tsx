@@ -3,7 +3,6 @@ import React from "react";
 import { Box, Typography, IconButton } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Link from "next/link";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Footer: React.FC = () => {
   const navLinks = [
@@ -66,29 +65,6 @@ const Footer: React.FC = () => {
         >
           Connect with Us!
         </Typography>
-        <Link href="https://www.linkedin.com/groups/12487572/" passHref>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              gap: "8px",
-              marginBottom: "8px",
-            }}
-          >
-            <IconButton sx={{ color: "white" }} aria-label="Facebook">
-              <LinkedInIcon />
-            </IconButton>
-            <Typography
-              sx={{
-                cursor: "pointer",
-                textDecoration: "none",
-                "&:hover": { color: "gray" },
-              }}
-            >
-              E-Scholars & GEP
-            </Typography>
-          </Box>
-        </Link>
         <Link href="https://www.instagram.com/nusescholars" passHref>
           <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
             <IconButton sx={{ color: "white" }} aria-label="Instagram">
