@@ -50,9 +50,9 @@ const LandingGalleryLinks: React.FC<LandingGalleryLinksProps> = ({
                 variant="h3"
                 sx={{
                   position: "absolute",
-                  bottom: "40%",
+                  top: "50%",
                   left: "50%",
-                  transform: "translateX(-50%)",
+                  transform: "translate(-50%, -50%)",
                   color: "white",
                   fontWeight: "bold",
                   textShadow: "0px 2px 4px rgba(0, 0, 0, 0.5)",
