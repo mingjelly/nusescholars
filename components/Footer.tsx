@@ -8,7 +8,6 @@ const Footer: React.FC = () => {
   const navLinks = [
     { label: "About Us", href: "/about-us" },
     { label: "Humans of De-Scholars", href: "/humans-of-descholars" },
-    { label: "Events", href: "/events" },
     { label: "Resources", href: "/resources" },
   ];
 
