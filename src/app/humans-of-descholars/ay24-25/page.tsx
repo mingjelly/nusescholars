@@ -20,7 +20,7 @@ const App: React.FC = () => {
 
   return (
     <PageTemplate>
-      <Header image="/images/orientation2024.jpg" title="AY24/25" />
+      <Header image="/images/batch-pics/AY2425-EScholars.jpg" title="AY24/25" />
       {Object.entries(batchData).map(([key, value]) => (
         <PersonCards
           key={key}
