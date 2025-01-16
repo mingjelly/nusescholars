@@ -25,15 +25,11 @@ export default function InformationBox({ header, data }: InformationBoxProps) {
         {header}
       </Typography>
       <List>
-        {data
-          .split("\n")
-          .map((achievement) => achievement.replace(/^\d+\.\s*/, "").trim()) // Trim numbers and whitespace
-          .filter((achievement) => achievement !== "") // Remove empty strings
-          .map((achievement, index) => (
-            <ListItem key={index} disableGutters>
-              <ListItemText primary={`• ${achievement}`} />
-            </ListItem>
-          ))}
+        {data.split("\n").map((achievement, index) => (
+          <ListItem key={index} disableGutters>
+            <ListItemText primary={`• ${achievement}`} />
+          </ListItem>
+        ))}
       </List>
     </Box>
   );
