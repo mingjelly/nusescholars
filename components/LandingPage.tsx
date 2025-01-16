@@ -7,12 +7,12 @@ import LandingGalleryLinks from "./LandingPage/LandingGalleryLinks";
 const galleryItems = [
   {
     title: "About Us",
-    image: "/images/orientation2024.jpg",
+    image: "/images/batch-pics/AY2223 EScholars.jpg",
     link: "/about-us",
   },
   {
     title: "Humans of DE-Scholars",
-    image: "/images/orientation2024.jpg",
+    image: "/images/landing-page/humans.jpg",
     link: "/humans-of-descholars",
   },
 ];

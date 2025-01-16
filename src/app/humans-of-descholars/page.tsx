@@ -7,22 +7,22 @@ export default function Page() {
   const batchItems = [
     {
       title: "AY21/22",
-      image: "/images/orientation2024.jpg",
+      image: "/images/batch-pics/AY2122 EScholars.jpg",
       link: baseLink + "ay21-22",
     },
     {
       title: "AY22/23",
-      image: "/images/orientation2024.jpg",
+      image: "/images/batch-pics/AY2223 EScholars.jpg",
       link: baseLink + "ay22-23",
     },
     {
       title: "AY23/24",
-      image: "/images/orientation2024.jpg",
+      image: "/images/batch-pics/AY2324 EScholars.jpg",
       link: baseLink + "ay23-24",
     },
     {
       title: "AY24/25",
-      image: "/images/orientation2024.jpg",
+      image: "/images/batch-pics/AY2425 EScholars.jpg",
       link: baseLink + "ay24-25",
     },
   ];
