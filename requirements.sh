@@ -9,6 +9,11 @@ echo "Installing material ui..."
 sleep 3
 npm install @mui/material @emotion/react @emotion/styled
 npm install @mui/icons-material
+
+#install vercel packages
+npm i @vercel/analytics
+npm i @vercel/speed-insights
+
 npm audit fix
 
 #install pandas, openpyxl
