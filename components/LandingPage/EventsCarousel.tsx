@@ -27,11 +27,6 @@ const events: Event[] = [
     description: "Join us for exciting company visits!",
     image: "/images/LandingCarousel/boeing.jpg",
   },
-  {
-    title: "Hackathon 2024",
-    description: "Showcase your innovative spirit at our annual hackathon.",
-    image: "/images/LandingCarousel/hackathon.jpg",
-  },
 ];
 
 const EventsCarousel: React.FC = () => {
