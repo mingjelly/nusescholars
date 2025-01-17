@@ -6,14 +6,9 @@ export default function Page() {
   const baseLink = "/humans-of-descholars/";
   const batchItems = [
     {
-      title: "AY21/22",
-      image: "/images/batch-pics/AY2122-EScholars.jpg",
-      link: baseLink + "ay21-22",
-    },
-    {
-      title: "AY22/23",
-      image: "/images/batch-pics/AY2223-EScholars.jpg",
-      link: baseLink + "ay22-23",
+      title: "AY24/25",
+      image: "/images/batch-pics/AY2425-EScholars.jpg",
+      link: baseLink + "ay24-25",
     },
     {
       title: "AY23/24",
@@ -21,9 +16,14 @@ export default function Page() {
       link: baseLink + "ay23-24",
     },
     {
-      title: "AY24/25",
-      image: "/images/batch-pics/AY2425-EScholars.jpg",
-      link: baseLink + "ay24-25",
+      title: "AY22/23",
+      image: "/images/batch-pics/AY2223-EScholars.jpg",
+      link: baseLink + "ay22-23",
+    },
+    {
+      title: "AY21/22",
+      image: "/images/batch-pics/AY2122-EScholars.jpg",
+      link: baseLink + "ay21-22",
     },
   ];
 
