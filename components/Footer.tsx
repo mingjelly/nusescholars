@@ -8,7 +8,7 @@ import Link from "next/link";
 const Footer: React.FC = () => {
   const navLinks = [
     { label: "About Us", href: "/about-us" },
-    { label: "Humans of De-Scholars", href: "/humans-of-descholars" },
+    { label: "Humans of DE-Scholars", href: "/humans-of-descholars" },
     { label: "Resources", href: "/resources" },
   ];
 
@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
                 "&:hover": { color: "gray" },
               }}
             >
-              Bug reporting form
+              Bug Reporting Form
             </Typography>
           </Box>
         </Link>
