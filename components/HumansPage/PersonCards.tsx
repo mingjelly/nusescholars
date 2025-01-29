@@ -1,90 +1,103 @@
-import React from "react";
-import { Box, Grid, Typography } from "@mui/material";
-// import Image from "next/image";
+"use client"
+import React, { useState, useEffect } from "react";
+import { Box, Grid, Typography, CircularProgress } from "@mui/material";
 
 export interface PersonCardItem {
-  image: string; // Image URL
-  link: string; // Link URL
-  name: string; // Name of the person
+    image: string; // Image URL
+    link: string; // Link URL
+    name: string; // Name of the person
 }
 
 interface PersonCardsProps {
-  personCards: PersonCardItem[];
-  title: string; // Array of person cards
+    personCards: PersonCardItem[];
+    title: string; // Title of the section
 }
 
 const PersonCards: React.FC<PersonCardsProps> = ({ personCards, title }) => {
-  return (
-    <Box
-      sx={{
-        margin: "0 auto",
-        padding: "2rem 1rem",
-        width: "70%",
-      }}
-    >
-      <Typography
-        variant="h3"
-        component="h1"
-        sx={{
-          textAlign: "center",
-          fontFamily: "monospace",
-          mb: "20px",
-        }}
-      >
-        {title}
-      </Typography>
-      <Grid container spacing={4}>
-        {personCards.map((card, index) => (
-          <Grid item xs={12} sm={6} md={3} key={index}>
-            <Box
-              component="a"
-              href={card.link}
-              sx={{
-                display: "block",
-                textDecoration: "none",
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const imagePromises = personCards.map((card) => {
+            return new Promise((resolve) => {
+                const img = new Image();
+                img.src = card.image;
+                img.onload = resolve;
+                img.onerror = resolve;
+            });
+        });
+
+        Promise.all(imagePromises).then(() => setLoading(false));
+    }, [personCards]);
+
+    return (
+        <Box
+            sx={{
+                margin: "0 auto",
+                padding: "2rem 1rem",
+                width: "70%",
                 textAlign: "center",
-                position: "relative",
-                overflow: "hidden",
-                borderRadius: "8px",
-                boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-              }}
-            >
-              <img
-                src={card.image}
-                alt={card.name}
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  borderRadius: "8px",
-                }}
-              />
-              {/* <Image
-                src={card.image}
-                alt={card.name}
-                layout="responsive"
-                width={800}
-                height={500}
-                style={{
-                  borderRadius: "8px",
-                }}
-              /> */}
-            </Box>
+            }}
+        >
             <Typography
-              variant="h6"
-              sx={{
-                marginTop: "0.5rem",
-                textAlign: "center",
-                fontWeight: "bold",
-                fontFamily: "monospace",
-              }}
+                variant="h3"
+                component="h1"
+                sx={{
+                    textAlign: "center",
+                    fontFamily: "monospace",
+                    mb: "20px",
+                }}
             >
-              {card.name}
+                {title}
             </Typography>
-          </Grid>
-        ))}
-      </Grid>
-    </Box>
-  );
+
+            {loading ? (
+                <Box display="flex" justifyContent="center" alignItems="center" height={200}>
+                    <CircularProgress />
+                </Box>
+            ) : (
+                <Grid container spacing={4}>
+                    {personCards.map((card, index) => (
+                        <Grid item xs={12} sm={6} md={3} key={index}>
+                            <Box
+                                component="a"
+                                href={card.link}
+                                sx={{
+                                    display: "block",
+                                    textDecoration: "none",
+                                    textAlign: "center",
+                                    position: "relative",
+                                    overflow: "hidden",
+                                    borderRadius: "8px",
+                                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+                                }}
+                            >
+                                <img
+                                    src={card.image}
+                                    alt={card.name}
+                                    style={{
+                                        width: "100%",
+                                        height: "auto",
+                                        borderRadius: "8px",
+                                    }}
+                                />
+                            </Box>
+                            <Typography
+                                variant="h6"
+                                sx={{
+                                    marginTop: "0.5rem",
+                                    textAlign: "center",
+                                    fontWeight: "bold",
+                                    fontFamily: "monospace",
+                                }}
+                            >
+                                {card.name}
+                            </Typography>
+                        </Grid>
+                    ))}
+                </Grid>
+            )}
+        </Box>
+    );
 };
 
 export default PersonCards;
