@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://nusdescholars.com
-
-# Sitemaps
-Sitemap: https://nusdescholars.com/sitemap.xml
