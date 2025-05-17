@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import { Box, Grid, Typography, CircularProgress } from "@mui/material";
 
@@ -68,7 +68,12 @@ const PersonCards: React.FC<PersonCardsProps> = ({ personCards, title }) => {
                                     position: "relative",
                                     overflow: "hidden",
                                     borderRadius: "8px",
+                                    transition: "transform 0.3s ease, box-shadow 0.3s ease",
                                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+                                    "&:hover": {
+                                        transform: "scale(1.05)",
+                                        boxShadow: "0px 8px 20px rgba(0, 0, 0, 0.3)",
+                                    },
                                 }}
                             >
                                 <img
