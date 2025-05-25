@@ -201,6 +201,18 @@
                 "linkedin_url": null,
                 "instagram_url": "https://www.instagram.com/k.ellee10/",
                 "github_url": null
+            },
+            "goh-ting-en-jonathan": {
+                "name": "Goh Ting En Jonathan",
+                "admit_year": "AY22/23 (Year 3)",
+                "academic_career": "E-Scholars Undergraduate",
+                "major": "CHBE - Chemical Engineering",
+                "writeup": "Heyoo! I\u2019m Jonathan, a chemical engineering undergraduate taking a materials minor as well. I\u2019m very passionate about semiconductors and how engineering can integrate multiple scientific concepts to produce cutting edge technologies that help our everyday lives. On a more personal note, I\u2019m also a basketball enthusiast for more than a decade, so I\u2019ll likely dribble any ball you pass to me.  :)",
+                "notable_achievements": "SEP (University of Texas at Austin AY2023/2024 Semester 2)\nBasketball coaching assistant for alma mater Dunman High School (2023 to present)",
+                "interests_hobbies": "Basketball\nFishing\nNerdy stuff (Star Wars, LOTR, Transformers etc)",
+                "linkedin_url": "https://www.linkedin.com/in/goh-tingen-jonathan/",
+                "instagram_url": null,
+                "github_url": null
             }
         },
         "EEE": {
@@ -333,7 +345,7 @@
                 "academic_career": "E-Scholars Undergraduate",
                 "major": "Mechanical Engineering",
                 "writeup": "I'm part of the E-scholars Programme and an aspiring aerospace engineer. I'm passionate about making a difference in the aerospace industry. I am deeply interested in the field of biomimicry in flight mechanics.",
-                "notable_achievements": "NIL",
+                "notable_achievements": null,
                 "interests_hobbies": "Reading both non-fiction books on technology and fiction novels\nSnowboarding",
                 "linkedin_url": "https://www.linkedin.com/in/limhengweeivan",
                 "instagram_url": null,
@@ -427,19 +439,6 @@
                 "instagram_url": "https://www.instagram.com/ethan.monk.lock/",
                 "github_url": null
             },
-            "nicholas-chia": {
-                "name": "Nicholas Chia",
-                "admit_year": "AY23/24 (Year 2)",
-                "academic_career": "E-Scholars Undergraduate",
-                "major": "Mechanical Engineering",
-                "writeup": "Hi I am Nicholas, a Year 2 Mechanical Engineering E-Scholar specialising in Aeronautical Engineering! I am on Student Exchange Programme (SEP) to Purdue University in semester 1 of AY24/25 and I will be back in NUS in semester 2. If you have any questions, do feel free to reach out to me via email (e1137080@u.nus.edu)!",
-                "picture_url": "https://nusu-my.sharepoint.com/personal/e1122235_u_nus_edu/Documents/Apps/Microsoft%20Forms/DE-Scholars%20Census%20AY2425/Question/IMG_0090_Nicholas%20Chia.jpeg",
-                "notable_achievements": "NUS Catcafe Events Member",
-                "interests_hobbies": "Flight simulators/Aviation\nAnime/Manga\nCats",
-                "linkedin_url": "https://www.linkedin.com/in/nicholas-chia-a676771b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-                "instagram_url": "https://www.instagram.com/fried_sushi?igsh=MTZ3NWo0aHltM3h3ZA%3D%3D&utm_source=qr",
-                "github_url": null
-            },
             "gerianne-lee-shyi-chee": {
                 "name": "Gerianne Lee Shyi Chee",
                 "admit_year": "AY23/24 (Year 2)",
@@ -463,20 +462,6 @@
                 "interests_hobbies": "Aviation\nCats!\nHoyoverse games",
                 "linkedin_url": "www.linkedin.com/in/nicholas-chia-a676771b8",
                 "instagram_url": "instagram.com/fried_sushi/",
-                "github_url": null
-            }
-        },
-        "EVE": {
-            "amberly-pock-xin-yi": {
-                "name": "Amberly Pock Xin Yi",
-                "admit_year": "AY23/24 (Year 2)",
-                "academic_career": "E-Scholars Undergraduate",
-                "major": "Environmental Engineering",
-                "writeup": "Hi! I'm Amberly, a Year 1 Environmental Engineering Student with a second major in Sustainable Urban Development, and I live at Residential College 4! I chose environmental engineering as I'm passionate about sustainability and want to learn how to create or improve on solutions that makes the world a better place to live in, for both present and future generations. Areas I'm particularly interested in are renewable energy, and circular economy.\n\nCurrently, I'm actively participating in NUS CCAs such as d'Hoppers, SAVE and Project OceaNUS. In my time at NUS, I hope to take up various research opportunities and internships to put what I've learnt to practical use, and embark on projects that can help the environment and those around me!",
-                "notable_achievements": "NIL",
-                "interests_hobbies": "Dancing\nExploring good eats!",
-                "linkedin_url": "https://www.linkedin.com/in/amberly-pock-091a422b1/",
-                "instagram_url": "instagram.com/amberlypxy_",
                 "github_url": null
             }
         }
@@ -739,17 +724,16 @@
             }
         },
         "EVE": {
-            "amberly-pock": {
-                "name": "Amberly Pock",
-                "admit_year": "AY24/25 (Year 1)",
+            "amberly-pock-xin-yi": {
+                "name": "Amberly Pock Xin Yi",
+                "admit_year": "AY23/24 (Year 2)",
                 "academic_career": "E-Scholars Undergraduate",
                 "major": "Environmental Engineering",
-                "writeup": "Hi! I'm Amberly, a Year 1 Environmental Engineering Student doing a second major in Sustainable Urban Development! I'm part of the Engineering Scholars Programme and live at Residential College 4.\n\nI chose environmental engineering as I'm passionate about sustainability and want to learn how to create or improve on solutions that make the world more sustainable and better to live in, and I'm particularly interested in the field of renewable energy.\n\nIn my time at NUS, I hope to be able to go on Semester Exchange Programme to widen my perspectives and experience new cultures, and take up various internships to put what I've learnt to practical use, and embark on projects that can help the environment and those around me!",
-                "picture_url": "https://nusu-my.sharepoint.com/personal/e1122235_u_nus_edu/Documents/Apps/Microsoft%20Forms/DE-Scholars%20Census%20AY2425/Question/e-scholars%20pic_Amberly%20Pock.jpg",
-                "notable_achievements": null,
-                "interests_hobbies": "Dancing\nExploring Good Food",
-                "linkedin_url": "https://www.linkedin.com/in/amberly-pock-091a422b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-                "instagram_url": "https://www.instagram.com/amberlypxy_",
+                "writeup": "Hi! I'm Amberly, a Year 1 Environmental Engineering Student with a second major in Sustainable Urban Development, and I live at Residential College 4! I chose environmental engineering as I'm passionate about sustainability and want to learn how to create or improve on solutions that makes the world a better place to live in, for both present and future generations. Areas I'm particularly interested in are renewable energy, and circular economy.\n\nCurrently, I'm actively participating in NUS CCAs such as d'Hoppers, SAVE and Project OceaNUS. In my time at NUS, I hope to take up various research opportunities and internships to put what I've learnt to practical use, and embark on projects that can help the environment and those around me!",
+                "notable_achievements": "NIL",
+                "interests_hobbies": "Dancing\nExploring good eats!",
+                "linkedin_url": "https://www.linkedin.com/in/amberly-pock-091a422b1/",
+                "instagram_url": "instagram.com/amberlypxy_",
                 "github_url": null
             },
             "hannah-hoo": {
