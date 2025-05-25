@@ -74,7 +74,7 @@ const Profile: React.FC<ProfileProps> = ({
             Hi! I’m {name}
           </Typography>
           <Typography variant="body1" sx={{ mb: 2, fontFamily: "monospace" }}>
-            I study {course} as a {academicYear} year student.
+            I study {course} as a {academicYear} student.
             {/* <br />
             Currently, I am working on... (customizable intro). */}
           </Typography>
