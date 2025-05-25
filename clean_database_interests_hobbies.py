@@ -32,8 +32,8 @@ def clean_json(data):
                 clean_json(item)
 
 # Load JSON data
-input_file = 'src/data/database.json'  # Replace with your JSON file path
-output_file = 'src/data/database.json'
+input_file = 'src/data/database_add.json'  # Replace with your JSON file path
+output_file = 'src/data/database_add.json'
 
 with open(input_file, 'r') as file:
     data = json.load(file)
