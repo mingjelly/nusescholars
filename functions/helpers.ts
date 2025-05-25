@@ -22,8 +22,8 @@ export function getMajorName(key: string): string {
     return "Biomedical Engineering";
   } else if (key === "ESP") {
     return "Engineering Science Programme";
-  } else if (key === "EVE") {
-    return "Environmental Engineering";
+  } else if (key === "ESE") {
+    return "Environmental and Sustainability Engineering";
   } else if (key === "ISE") {
     return "Industrial and Systems Engineering";
   } else if (key === "MLE") {
