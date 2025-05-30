@@ -18,8 +18,8 @@ interface Event {
 
 const events: Event[] = [
   {
-    title: "Orientation 2024",
-    description: "Kickstart your journey with us at Orientation 2024!",
+    title: "Orientation 2025",
+    description: "Kickstart your journey with us at Orientation 2025! Happening from 6-7 Aug 2025.",
     image: "/images/orientation2024.jpg",
   },
   {
