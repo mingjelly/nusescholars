@@ -18,7 +18,8 @@ export default async function Page() {
     <PageTemplate>
       <HeroSection
         title="Humans of DE-Scholars"
-        description="Welcome to the Humans of DE-Scholars!"
+        description="Welcome to the Humans of DE-Scholars! Select the batch below to
+        find out more about us :)"
       />
       <LinkItems linkItems={batchItems} />
     </PageTemplate>
